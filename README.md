@@ -10,10 +10,12 @@
 
 ```bash
 pip install requests beautifulsoup4
+```
 
 для ручной устоновки поместите файл core в свой проект и импортируйте все функции с помощью
 ```python
 from core import *
+```
 
 ## документация:
 Основные функции
