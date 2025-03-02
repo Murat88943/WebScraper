@@ -18,61 +18,80 @@ from core import *
 ```
 
 ## документация:
-Основные функции
+Основные функции:
+
 parse_mode_block(url, tag, class_=None)
 Парсит элементы по указанному тегу и классу.
 
 Пример:
 
-python
-Copy
+```python
 parse_mode_block('https://example.com', 'h1')
 parse_mode_site(url)
 Парсит всю страницу, извлекая текст, ссылки, заголовки, изображения, мета-теги и таблицы.
-
+```
+```
 get_page_content(url)
+```
 Возвращает HTML-код страницы.
 
-Дополнительные функции
+Дополнительные функции:
+```
 extract_titles(soup, tag='h1'): Извлекает заголовки по указанному тегу.
-
+```
+```
 extract_links(soup): Извлекает все ссылки.
-
+```
+```
 extract_images(soup): Извлекает все изображения.
-
+```
+```
 extract_meta_tags(soup): Извлекает мета-теги.
-
+```
+```
 extract_tables(soup): Извлекает таблицы.
-
+```
+```
 extract_paragraphs(soup): Извлекает параграфы.
-
+```
+```
 extract_lists(soup): Извлекает списки.
-
+```
+```
 extract_forms(soup): Извлекает формы.
-
+```
+```
 extract_comments(soup): Извлекает HTML-комментарии.
-
+```
+```
 extract_specific_elements(soup, tag, class_=None): Извлекает элементы по тегу и классу.
-
+```
+```
 extract_scripts(soup): Извлекает внешние скрипты.
-
+```
+```
 extract_styles(soup): Извлекает внешние стили.
-
+```
+```
 extract_iframes(soup): Извлекает iframe.
-
+```
+```
 extract_buttons(soup): Извлекает текст кнопок.
-
+```
+```
 extract_inputs(soup): Извлекает input-элементы.
-
+```
+```
 extract_anchors(soup): Извлекает текст ссылок.
-
+```
+```
 extract_divs(soup, class_=None): Извлекает текст div-элементов.
-
+```
+```
 extract_spans(soup, class_=None): Извлекает текст span-элементов.
-
+```
 Пример использования
-python
-Copy
+```python
 from bs4 import BeautifulSoup
 from parser import get_page_content, extract_titles, extract_links
 
@@ -84,3 +103,4 @@ if page_content:
     links = extract_links(soup)
     print("Заголовки:", titles)
     print("Ссылки:", links)
+```
